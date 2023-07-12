@@ -20,17 +20,17 @@ const Portals = () => {
     (faq) => faq.name === 'Portals'
   );
   const portalsChild = portals.children;
-  console.log(portalsChild)
+ 
 
   const portalsChildCategory = portalsChild.slice(portalsChild.length - 2)
-  console.log(portalsChildCategory)
+
 
   return (
     <>
         {portalsChild.map(({ question, answer }, id) => {
         return (
           <div className="my-5" key={id}>
-            <h4 className="font-bold bg-gray-100">{question}</h4>
+            <h4 className="font-bold bg-gray-200">{question}</h4>
             <p>{answer}</p>
           </div>
         );
