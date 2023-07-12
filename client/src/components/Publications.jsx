@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { faqs } from '../data';
+import Explanations from './Explanations';
+import Portals from './Portals';
 
 const Publications = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -29,6 +31,10 @@ const Publications = () => {
             return <option key={i}>{faq.name}</option>;
           })}
         </select>
+        {selectedCategory === 'Explanations' && (
+        <Explanations />
+      )}
+      {selectedCategory === 'Portals' && <Portals />}
         
       </>
     );
