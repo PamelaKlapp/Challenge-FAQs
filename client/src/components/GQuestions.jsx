@@ -7,9 +7,7 @@ const GQuestions = () => {
   const gQuestions = musicChild.find(
     (faq) => faq.name === 'General questions and requirements'
   );
-  console.log(gQuestions);
   const gQuestionsChild = gQuestions.children;
-  console.log(gQuestionsChild);
 
   return (
     <>
