@@ -1,10 +1,9 @@
 import {faqs} from '../data'
 
 const LegalStuff = () => {
-    const lStuff = faqs.find((faq)=> faq.name === 'Legal stuff')
-    console.log(lStuff)
+    const lStuff = faqs.find((faq)=> faq.name === 'Legal stuff');
     const lStuffChild = lStuff.children
-    console.log(lStuffChild)
+  
 
 
   return (
