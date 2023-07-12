@@ -1,7 +1,11 @@
+import Content from "./components/Content"
+
 
 function App() {
   return (
-    <div>App</div>
+    <>
+    <Content/>
+    </>
   )
 }
 
