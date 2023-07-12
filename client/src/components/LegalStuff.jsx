@@ -9,14 +9,16 @@ const LegalStuff = () => {
 
   return (
     <>
+    
         {lStuffChild.map(({question, answer}, id) =>{
             return(
-                <div key={id}>
-                    <h4>{question}</h4>
-                    <p>{answer}</p>
+                <div className='my-5' key={id}>
+                    <h4 className='font-bold bg-gray-100'>{question}</h4>
+                    <p >{answer}</p>
                 </div>
             )
         })}
+       
     </>
     
   )
