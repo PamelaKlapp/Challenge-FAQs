@@ -22,6 +22,9 @@ const Portals = () => {
   const portalsChild = portals.children;
   console.log(portalsChild)
 
+  const portalsChildCategory = portalsChild.slice(portalsChild.length - 2)
+  console.log(portalsChildCategory)
+
   return (
     <>
         {portalsChild.map(({ question, answer }, id) => {
@@ -42,7 +45,7 @@ const Portals = () => {
           onChange={handleCategoryChange}
         >
           <option value=""> -- Select Category --</option>
-          {portalsChild.map(({name},i) => {
+          {portalsChildCategory.map(({name},i) => {
             return <option key={i}>{name}</option>;
           })}
         </select>
